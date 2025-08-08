@@ -21,7 +21,6 @@ number_of_dependants = st.number_input("Number of Dependants", min_value=0, valu
 credit_utilization_ratio = st.slider("Credit Utilization Ratio", 0.0, 1.0, 0.3)
 loan_to_income = st.number_input("Loan to Income Ratio", min_value=0.0, value=0.25)
 delinquent_months_ratio = st.number_input("Delinquent Months Ratio", min_value=0.0, value=0.0)
-
 if st.button("Predict Default Risk"):
     input_data = pd.DataFrame([{
         "employment_status": employment_status,
